@@ -26,7 +26,7 @@ def btc_last():
 def combine():
     symbol, close, time = get_quote('tsla')
     bitcoin = btc_last()
-    return "%s\n%s: %.6f BTC" % (
+    return "%s\r\n%s: %.6f BTC" % (
         time.encode('utf-8'),
         symbol.encode('utf-8'),
         (close / bitcoin)
